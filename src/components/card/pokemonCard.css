@@ -1,0 +1,127 @@
+.rock {
+    background-color: rgb(148, 81, 81)!important;
+}
+.ghost {
+    background-color: rgb(247, 247, 247)!important;
+}
+.electric {
+    background-color: rgb(255, 255, 161)!important;
+}
+.bug {
+    background-color: #F6D6A7!important;
+}
+.poison {
+    background-color: #e0a7f6!important;
+}
+.normal {
+    background-color: #F4F4F4!important;
+}
+.fairy {
+    background-color: rgba(255, 192, 203, 0.863)!important;
+}
+.fire {
+    background-color: #FBE3DF!important;
+}
+.grass {
+    background-color:#E2F9E1!important;
+}
+.water {
+    background-color:#E0F1FD!important;
+}
+.ground {
+    background-color: #c68767!important;
+}
+.psychic {
+    background-color: #a19bb3!important;
+}
+.dragon {
+    background-color: #fd753b!important;
+}
+.dark {
+    background-color: #707070!important;
+}
+.steel {
+    background-color: #7b97ae!important;
+}
+.fighting {
+    background-color: #d0cebc!important;
+}
+.cardContainer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 2rem ;
+    margin: 0.5rem;
+    border: 1px solid #efefef;
+    border-radius: 0.2rem;
+    min-width: 160px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+    transition: transform 0.15s ease-in-out;
+    cursor: pointer;
+}
+.cardContainer:hover {
+    transform: scale3d(1.06, 1.06, 1);
+}
+
+.detailWrapper h4 {
+    margin-bottom: 0.2rem;
+    margin-top: 0.8rem;
+    text-transform:uppercase;
+    background-color: inherit;
+}
+.cardContainer .number {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    background-color: inherit;
+}
+.cardContainer .number .smallNumber {
+    border-radius: 1rem;
+    color: white;
+    font-weight: 1rem;
+    padding: 0.2rem 0.6rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+}
+.cardContainer img {
+    background-color: inherit;
+    width: 200px;
+    height: 200px;
+}
+.detailWrapper {
+    display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: inherit;
+}
+.detailWrapper small {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+    font-weight: 1rem;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+    padding: 0.4rem 0;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width:647px) and (max-width:748px) {
+
+    .cardContainer {
+    min-width: 300px;
+  }
+}
+
+@media screen and (min-width:748px) and (max-width:860px) {
+    .cardContainer {
+    min-width: 350px;
+  }
+}
+@media screen and (min-width:375px) and (max-width:450px) {
+    .cardContainer {
+      min-width: 350px;
+    }
+  }
